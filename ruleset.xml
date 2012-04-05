@@ -51,6 +51,7 @@
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="PEAR.ControlStructures.ControlSignature"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
-    <rule ref="PEAR.Commenting.FunctionComment"/>
+    <rule ref="Oggetto.Commenting.FunctionComment"/>
 </ruleset>
