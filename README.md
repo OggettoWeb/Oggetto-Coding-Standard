@@ -1,4 +1,4 @@
-Oggetto-Coding-Standard
+Oggetto Coding Standard
 =======================
 
 Репозиторий содержит правила для PHP Code Sniffer, которые автоматизируют 
