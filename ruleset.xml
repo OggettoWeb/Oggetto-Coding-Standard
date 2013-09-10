@@ -54,4 +54,5 @@
     <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="Oggetto.Commenting.FunctionComment"/>
+    <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
 </ruleset>
