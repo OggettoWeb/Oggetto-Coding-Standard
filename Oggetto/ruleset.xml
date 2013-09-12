@@ -49,7 +49,7 @@
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
     <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
-    <rule ref="PEAR.ControlStructures.ControlSignature"/>
+    <rule ref="Oggetto.ControlStructures.ControlSignature"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
