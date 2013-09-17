@@ -5,3 +5,5 @@ Oggetto Coding Standard
 проверку PHP-кода на соответствие корпоративному стандарту Oggetto Web.
 
 Описание стандарта: http://oggettoweb.github.io/docs/php/code_style/index.html
+
+Установка и использование
