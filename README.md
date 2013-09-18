@@ -6,10 +6,8 @@ Oggetto Coding Standard
 
 Описание стандарта: http://oggettoweb.github.io/docs/php/code_style/index.html
 
-Установка и использование
+Установка из консоли
 ---
-
-**Из консоли**
 
 1. Установить [composer](http://getcomposer.org/doc/01-basic-usage.md#installation) в папку с проектом
 ```
@@ -50,6 +48,12 @@ alias cs="vendor/bin/phpcs --standard=vendor/oggettoweb/coding_standard/Oggetto/
 $ cs /path/to/php/code
 ```
 
-**Из PHPStorm**
+Установка в PHPStorm
+---
+
+...
+
+Установка в git pre-commit
+---
 
 ...
