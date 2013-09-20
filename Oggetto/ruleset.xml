@@ -28,6 +28,7 @@
 <ruleset name="Oggetto">
     <description>Oggetto coding standard.</description>
     <rule ref="Zend.Files.ClosingTag"/>
+    <rule ref="PSR2.Files.EndFileNewline"/>
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent"/>
     <rule ref="Generic.Files.LineLength">
