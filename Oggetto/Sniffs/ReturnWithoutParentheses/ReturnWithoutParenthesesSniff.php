@@ -30,8 +30,7 @@ class Oggetto_Sniffs_ReturnWithoutParentheses_ReturnWithoutParenthesesSniff impl
     {
         $tokens = $phpcsFile->getTokens();
         if ($tokens[$stackPtr]["code"] === T_RETURN) {
-            $i = $phpcsFile->findNext(T_RETURN, 0, null, false);
-            $i = $phpcsFile->findNext(T_WHITESPACE, $i + 1, null, true);
+            $i = $phpcsFile->findNext(T_WHITESPACE, $stackPtr + 1, null, true);
 
             if ($tokens[$i]["code"] === T_OPEN_PARENTHESIS) {
                 $j = $phpcsFile->findNext(T_SEMICOLON, $i, null, false) - 1;
