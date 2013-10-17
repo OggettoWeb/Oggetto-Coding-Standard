@@ -8,6 +8,11 @@
  */
 class Oggetto_Sniffs_DontUseVar_DontUseVarSniff implements PHP_CodeSniffer_Sniff
 {
+    /**
+     * Register sniff
+     *
+     * @return void
+     */
     public function register()
     {
         return array(T_VAR);
@@ -24,12 +29,9 @@ class Oggetto_Sniffs_DontUseVar_DontUseVarSniff implements PHP_CodeSniffer_Sniff
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
-        if ($tokens[$stackPtr]["code"] === T_VAR)
-        {
+        if ($tokens[$stackPtr]["code"] === T_VAR) {
             $message = "Found keyword '%s'";
             $phpcsFile->addError($message, $stackPtr, "Found", $tokens[$stackPtr]["content"]);
         }
     }
 }
-
-?>
