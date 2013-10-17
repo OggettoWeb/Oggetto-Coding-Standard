@@ -56,4 +56,9 @@
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="Oggetto.Commenting.FunctionComment"/>
     <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
+
+
+    <rule ref="Oggetto.Functions.FunctionWhiteSpace"/>
+    <rule ref="Oggetto.Arrays.ArrayNegativeIndex"/>
+    <rule ref="Oggetto.File.OnlyEnglish"/>
 </ruleset>
