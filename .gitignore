@@ -1,4 +1,8 @@
 .DS_Store
+<<<<<<< HEAD
 vendor
 composer.lock
 composer.phar
+=======
+vendor
+>>>>>>> origin/fix10
