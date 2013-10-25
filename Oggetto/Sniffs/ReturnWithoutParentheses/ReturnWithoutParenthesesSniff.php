@@ -38,7 +38,7 @@ class Oggetto_Sniffs_ReturnWithoutParentheses_ReturnWithoutParenthesesSniff impl
                     $j--;
                 }
                 if ($tokens[$j]["code"] == T_CLOSE_PARENTHESIS) {
-                    $message = "Return value mustn't close in parentheses";
+                    $message = "Return values mustn't be enclosed in parentheses";
                     $phpcsFile->addError($message, $stackPtr, "Found");
                 }
             }

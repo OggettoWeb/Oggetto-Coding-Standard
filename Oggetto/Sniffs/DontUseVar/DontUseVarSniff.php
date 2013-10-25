@@ -30,7 +30,7 @@ class Oggetto_Sniffs_DontUseVar_DontUseVarSniff implements PHP_CodeSniffer_Sniff
     {
         $tokens = $phpcsFile->getTokens();
         if ($tokens[$stackPtr]["code"] === T_VAR) {
-            $message = "Found keyword '%s'";
+            $message = "Keyword '%s' should not be used";
             $phpcsFile->addError($message, $stackPtr, "Found", $tokens[$stackPtr]["content"]);
         }
     }
