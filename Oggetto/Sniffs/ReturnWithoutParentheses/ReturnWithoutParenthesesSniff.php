@@ -29,17 +29,17 @@ class Oggetto_Sniffs_ReturnWithoutParentheses_ReturnWithoutParenthesesSniff impl
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
-        if ($tokens[$stackPtr]["code"] === T_RETURN) {
+        if ($tokens[$stackPtr]['code'] === T_RETURN) {
             $i = $phpcsFile->findNext(T_WHITESPACE, $stackPtr + 1, null, true);
 
-            if ($tokens[$i]["code"] === T_OPEN_PARENTHESIS) {
+            if ($tokens[$i]['code'] === T_OPEN_PARENTHESIS) {
                 $j = $phpcsFile->findNext(T_SEMICOLON, $i, null, false) - 1;
-                if ($tokens[$j]["code"] == T_WHITESPACE) {
+                if ($tokens[$j]['code'] == T_WHITESPACE) {
                     $j--;
                 }
-                if ($tokens[$j]["code"] == T_CLOSE_PARENTHESIS) {
+                if ($tokens[$j]['code'] == T_CLOSE_PARENTHESIS) {
                     $message = "Return values mustn't be enclosed in parentheses";
-                    $phpcsFile->addError($message, $stackPtr, "Found");
+                    $phpcsFile->addError($message, $stackPtr, 'Found');
                 }
             }
         }
