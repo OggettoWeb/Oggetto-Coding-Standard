@@ -15,7 +15,7 @@ class Oggetto_Sniffs_ReturnWithoutParentheses_ReturnWithoutParenthesesSniff impl
      */
     public function register()
     {
-        return array(T_RETURN, T_OPEN_PARENTHESIS, T_CLOSE_PARENTHESIS, T_SEMICOLON);
+        return array(T_RETURN);
     }
 
     /**
@@ -29,6 +29,7 @@ class Oggetto_Sniffs_ReturnWithoutParentheses_ReturnWithoutParenthesesSniff impl
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
+
         if ($tokens[$stackPtr]['code'] === T_RETURN) {
             $i = $phpcsFile->findNext(T_WHITESPACE, $stackPtr + 1, null, true);
 

@@ -32,9 +32,11 @@ class Oggetto_Sniffs_Functions_FunctionNamesSniff implements PHP_CodeSniffer_Sni
         $tokens = $phpcsFile->getTokens();
         $i = $phpcsFile->findNext(T_WHITESPACE, $stackPtr + 1, null, true);
         $name = $tokens[$i]['content'];
+
         if (!in_array($name[0], range('a', 'z')) && $name[0] !== '_') {
             $phpcsFile->addError($message, $stackPtr, "Found");
         }
+        
         for ($j = 1; $j < strlen($name); $j++) { 
             if ($name[$j] === '_') {
                 $phpcsFile->addError($message, $stackPtr, 'Found');
