@@ -51,7 +51,18 @@ $ cs /path/to/php/code
 Установка в PHPStorm
 ---
 
-...
+1. Для начала, необходимо добавить новый scope, чтобы сниффером проверялись только классы из папки local. Для этого в настройках PHPStorm находим `Scopes`, в них добавляем новый как показано на иллюстриции:   
+![Scopes](http://d.pr/i/dq4W+ "Optional title")
+2. Далее, находим в настройках раздел `Inspections`, в нем `PHP Code Shiffer validation`:   
+![Sniffer](http://d.pr/i/ZEAW+ "Optional title")
+3. Нажимаем правой кнопкой мыщи и указываем scope:   
+![Scope](http://d.pr/i/d99B+ "Optional title")
+![Scope](http://d.pr/i/sb2r+ "Optional title")
+![Scope](http://d.pr/i/OGTx+ "Optional title")
+4. Выбираем стандарт:   
+![Scope](http://d.pr/i/gVVC+ "Optional title")
+5. Указываем полный путь к папке со стандартом внутри `vendor`:   
+![Scope](http://d.pr/i/vISk+ "Optional title")
 
 Установка в git pre-commit
 ---
