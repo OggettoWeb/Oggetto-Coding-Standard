@@ -58,7 +58,6 @@
     <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
     <rule ref="Oggetto.Functions.FunctionWhiteSpace"/>
     <rule ref="Oggetto.Arrays.ArrayNegativeIndex"/>
-    <rule ref="Oggetto.File.OnlyEnglish"/>
     <rule ref="Oggetto.Functions.FunctionNames"/>
     <rule ref="Oggetto.DontUseVar.DontUseVar"/>
     <rule ref="Oggetto.ReturnWithoutParentheses.ReturnWithoutParentheses"/>
