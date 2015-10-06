@@ -25,8 +25,6 @@ if (class_exists('PHP_CodeSniffer_CommentParser_FunctionCommentParser', true) ==
  *  <li>There is a blank newline between the long and short description.</li>
  *  <li>There is a blank newline between the long description and tags.</li>
  *  <li>Parameter names represent those in the method.</li>
- *  <li>Parameter comments are in the correct order</li>
- *  <li>Parameter comments are complete</li>
  *  <li>A space is present before the first and after the last parameter</li>
  *  <li>A return type exists</li>
  *  <li>There must be one blank line between body and headline comments.</li>
@@ -428,15 +426,6 @@ class Oggetto_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_
                 if ($param->getType() === '') {
                     $error = 'Missing type at position '.$pos;
                     $this->currentFile->addError($error, $errorPos, 'MissingParamType');
-                }
-
-                if ($paramComment === '') {
-                    $error = 'Missing comment for param "%s" at position %s';
-                    $data  = array(
-                              $paramName,
-                              $pos,
-                             );
-                    $this->currentFile->addError($error, $errorPos, 'MissingParamComment', $data);
                 }
 
                 $previousParam = $param;
