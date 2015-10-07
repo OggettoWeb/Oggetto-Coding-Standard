@@ -51,18 +51,17 @@ $ cs /path/to/php/code
 Установка в PHPStorm
 ---
 
-1. Для начала, необходимо добавить новый scope, чтобы сниффером проверялись только классы из папки local. Для этого в настройках PHPStorm находим `Scopes`, в них добавляем новый как показано на иллюстриции:   
-![Scopes](http://d.pr/i/dq4W+ "Optional title")
-2. Далее, находим в настройках раздел `Inspections`, в нем `PHP Code Shiffer validation`:   
-![Sniffer](http://d.pr/i/ZEAW+ "Optional title")
-3. Нажимаем правой кнопкой мыщи и указываем scope:   
-![Scope](http://d.pr/i/d99B+ "Optional title")
-![Scope](http://d.pr/i/sb2r+ "Optional title")
-![Scope](http://d.pr/i/OGTx+ "Optional title")
-4. Выбираем стандарт:   
-![Scope](http://d.pr/i/gVVC+ "Optional title")
-5. Указываем полный путь к папке со стандартом внутри `vendor`:   
-![Scope](http://d.pr/i/vISk+ "Optional title")
+1. Добавить новый scope, чтобы сниффером проверялись только классы из папки local. Для этого в настройках PHPStorm выбрать `Scopes`, в них добавить новый как показано на иллюстриции:   
+![scope](http://oggettoweb.github.io/assets/img/phpcs/cs_scope.png)
+2. Указать путь к code sniffer:   
+![path 1](http://oggettoweb.github.io/assets/img/phpcs/cs_shiffer_path_1.png)
+![path 2](http://oggettoweb.github.io/assets/img/phpcs/cs_shiffer_path_2.png)
+3. В разделе `Inspections` выбрать `PHP Code Shiffer validation`:   
+![inspection 1](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_1.png)
+4. Указать scope 
+![inspection 2](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_2.png)
+5. Указать выбрать Custom стандарт и указать путь к `vendor/oggettoweb/coding_standard/Oggetto`
+![inspection 3](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_3.png)
 
 Установка в git pre-commit
 ---
