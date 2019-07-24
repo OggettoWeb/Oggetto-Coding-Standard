@@ -52,16 +52,16 @@ $ cs /path/to/php/code
 ---
 
 1. Добавить новый scope, чтобы сниффером проверялись только классы из папки local. Для этого в настройках PHPStorm выбрать `Scopes`, в них добавить новый как показано на иллюстриции:   
-![scope](http://oggettoweb.github.io/assets/img/phpcs/cs_scope.png)
+![scope](images/scope.png)
 2. Указать путь к code sniffer:   
-![path 1](http://oggettoweb.github.io/assets/img/phpcs/cs_shiffer_path_1.png)
-![path 2](http://oggettoweb.github.io/assets/img/phpcs/cs_shiffer_path_2.png)
+![path 1](images/sniffer1.png)
+![path 2](images/sniffer2.png)
 3. В разделе `Inspections` выбрать `PHP Code Shiffer validation`:   
-![inspection 1](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_1.png)
+![inspection 1](images/inspection1.png)
 4. Указать scope 
-![inspection 2](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_2.png)
+![inspection 2](images/inspection2.png)
 5. Указать выбрать Custom стандарт и указать путь к `vendor/oggettoweb/coding_standard/Oggetto`
-![inspection 3](http://oggettoweb.github.io/assets/img/phpcs/cs_inspection_3.png)
+![inspection 3](images/inspection3.png)
 
 Установка в git pre-commit
 ---
